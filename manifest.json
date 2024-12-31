@@ -3,10 +3,12 @@
   "name": "Remove YouTube Anoyances",
   "version": "1.0",
   "description": "An extension to remove YouTube Anoyances.",
+  "author": "James Crutchley",
+  "homepage_url": "https://github.com/ne0rrmatrix/YoutubeAnnoyances",
   "permissions": [
     "activeTab",
     "tabs",
-	"storage"
+    "storage"
   ],
   "icons": {
     "16": "icons/icon-enabled-16.png",
@@ -25,21 +27,21 @@
     "default_title": "Remove YouTube Shorts"
   },
   "background": {
-    "scripts": ["background.js"]
+    "scripts": [ "background.js" ]
   },
   "options_ui": {
     "page": "options.html"
   },
   "content_scripts": [
     {
-      "matches": ["*://*.youtube.com/*"],
-      "js": ["content.js"]
+      "matches": [ "*://*.youtube.com/*" ],
+      "js": [ "content.js" ]
     }
   ],
   "browser_specific_settings": {
-  "gecko": {
-    "id": "addon@example.com",
-    "strict_min_version": "58.0"
+    "gecko": {
+      "id": "addon@example.com",
+      "strict_min_version": "58.0"
+    }
   }
-	}
 }
